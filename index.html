@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="js/script.js" defer></script>
     <script src="https://kit.fontawesome.com/6370b1e013.js" crossorigin="anonymous"></script>
-    
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="row">
@@ -26,7 +26,38 @@
                 <li><a href="#" class="link">Contact Us</a></li>
                 <li><a href="#" class="link">Login</a></li>
             </ul>
-            <a href=""><button class="btn">Sign Up</button></a>
+             <a href=""><button class="btn btn--signup">Sign Up</button></a>
+
+ <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul class="menu__links">
+           
+            <li class="menu__list">
+              <a href="#" class="menu__link" onclick="closeMenu()">About</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+            </li>
+            <li class="menu__list">
+              <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Sign Up</a>
+            </li>
+            </ul>
+            
+           
         </div>
         </div>
     </div>
@@ -41,7 +72,7 @@
                 <form action="/submit-form" method="post" class="email-box">
                     
                     <input type="email" id="emailAddress" name="email" required placeholder="Your E-mail Address">
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn email--button">Submit</button>
                 </form>
                 <div class="trusted__partners">
                     <p class="trusted__partners--para">OUR TRUSTED CUSTOMERS</p>
@@ -79,8 +110,8 @@
                         </figure>
                     
                         <div class="feature__text">
-                        <h4>Secure</h4>
-                        <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
+                        <h4 class="center">Secure</h4>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
                     </div>
                     </div>
                     <div class="feature__box">
@@ -88,8 +119,8 @@
                             <i class="fa-solid fa-headset feature__box__img" style="color: #6415ff;"></i>
                         </figure>
                         <div class="feature__text">
-                        <h4>24/7 Support</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
+                        <h4 class="center">24/7 Support</h4>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
                         </div>
                     </div>
                     <div class="feature__box">
@@ -97,8 +128,8 @@
                             <i class="fa-solid fa-sliders feature__box__img" style="color: #6415ff;"></i>
                         </figure>
                         <div class="feature__text">
-                        <h4>Customizable</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
+                        <h4 class="center">Customizable</h4>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
                         </div>
                     </div>
                     <div class="feature__box">
@@ -106,8 +137,8 @@
                             <i class="fa-solid fa-up-down feature__box__img" style="color: #6415ff;"></i>
                         </figure>
                         <div class="feature__text">
-                        <h4>Reliable</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
+                        <h4 class="center">Reliable</h4>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
                         </div>
                     </div>
                     <div class="feature__box">
@@ -115,8 +146,8 @@
                             <i class="fa-solid fa-bolt feature__box__img" style="color: #6415ff;"></i>
                         </figure>
                         <div class="feature__text">
-                        <h4>Fast</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
+                        <h4 class="center">Fast</h4>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
                         </div>
                     </div>
                     <div class="feature__box">
@@ -124,8 +155,8 @@
                             <i class="fa-solid fa-hand-holding-heart feature__box__img" style="color: #6415ff;"></i>
                         </figure>
                         <div class="feature__text">
-                        <h4>Easy</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
+                        <h4 class="center">Easy</h4>
+                        <p class="center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas commodi tempore debitis?</p>
                             </div>
                     </div>
                     </div>

@@ -671,3 +671,186 @@ hr {
     align-items: center;
 }
 
+/*
+BURGER MENU
+*/
+
+
+
+.btn__menu {
+   background-color: transparent;
+   font-size: 40px;
+   text-align: center;
+   border: none;
+   color: #7342d6;
+   display: none;
+}
+.menu__backdrop {
+   position: absolute;
+   background-color: #242424;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   z-index: 100;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: all 300ms ease;
+   opacity: 0;
+   visibility: hidden;
+}
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+.menu--open {
+   max-height: 100vh;
+   overflow-y: hidden;
+}
+.menu__links {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.menu__list {
+   padding: 32px 0;
+
+}
+.menu__link {
+   font-size: 40px;
+   color: white;
+}
+
+.btn__menu--close {
+   position: absolute;
+   right: 20px;
+   top: 10px;
+   padding: 8px;
+   color: white;
+}
+
+
+
+/*
+SMALL PHONES, TABLETS, LARGE SMARTPHONES , TABLETS
+*/
+
+@media (max-width: 768px) {
+
+  .feature__box {
+
+  width: calc(100% / 2);
+
+  }
+  .email--button {
+    font-size: 14px;
+    height: 20px;
+    width: 25%;
+    padding: 2px 30px 20px 5px;
+  }
+
+  .pricing__wrapper{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+  }
+.pricing__personal--background {
+   width: 380px; 
+}
+
+}
+
+
+
+/*SMALLER PHONES, LARGE SMARTPHONES */
+
+
+@media(max-width: 550px) {
+
+  .link , .btn--signup {
+      display: none;
+   }
+   .btn__menu {
+      display: block;
+   }
+   .email-box {
+    width: 150%;
+   }
+   .feature__box {
+    width: calc(100% / 1);
+    justify-content: center;
+   }
+   .landing__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   }
+   .trusted__partners--photo {
+    width: 150%;
+   }
+
+.quality__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+    .quality__img {
+        width: 100%;
+    }
+    .title__context {
+    
+        text-align: center;
+    }
+.started__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+ .started__img {
+        width: 100%;
+    }
+
+
+#values , #pricing , #started, #quality, #features , #landing, .center{
+    text-align: center;
+}
+
+.values__container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.values__img {
+        width: 100%;
+    }
+.values__principles {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+#test , .header--para {
+    text-align: center;
+}
+
+.test__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.test__img {
+        width: 100%;
+    }
+
+}
